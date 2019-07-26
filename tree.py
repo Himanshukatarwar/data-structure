@@ -87,16 +87,16 @@ class Tree:
 
     def traversing(self,choice='preorder'):
         if choice=='preoder':
-            self.preorder()
+            self.preordertraversingtraversing()
         elif choice=='postorder':
-            self.postorder()
+            self.postordertraversing()
         elif choice=='inorder':
-            self.inorder()
+            self.inordertraversing()
         else:
             print("Wrong Enter")
             
             
-    def preorder(self):
+    def preordertraversing(self):
         ans=[]
         left=[]
         right=[]
@@ -112,7 +112,7 @@ class Tree:
         return ans+left+right
         
         
-    def postorder(self):
+    def postordertraversing(self):
         ans=[]
         left=[]
         right=[]
@@ -128,7 +128,7 @@ class Tree:
         return ans+right+left
        
 
-    def inorder(self):
+    def inordertraversing(self):
         ans=[]
         left=[]
         right=[]
@@ -142,7 +142,7 @@ class Tree:
         if self.right:
             right=self.right.preorder()
         return ans+left+right
-    def levelorder(self):
+    def levelordertraversing(self):
         ans=[]
         queue=[]
         queue.append(self.root)
